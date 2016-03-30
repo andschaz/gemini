@@ -1,0 +1,25 @@
+rootUrl: http://ssi.w3.ua/
+gridUrl: http://localhost:4444/wd/hub
+desiredCapabilities:
+  commonThing: value
+calibrate: false
+tolerance: 3.5
+strictComparison: false
+httpTimeout: 3000
+screenshotsDir: 'screens'
+sessionsPerBrowser: 1
+suitesPerSession: 50
+browsers:
+  chrome:
+    windowSize: 1920x1000
+    desiredCapabilities:
+      browserName: chrome
+      version: "49.0"
+
+  firefox:
+    windowSize: 1920x1000
+    desiredCapabilities:
+      browserName: firefox
+      version: "45.0"
+system:
+  parallelLimit: 1
